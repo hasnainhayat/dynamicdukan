@@ -1,0 +1,62 @@
+@import url('../../../default.css');
+.sideBar{
+    padding: 1rem;
+    max-height: 80vh;
+    overflow-y: scroll;
+    position: sticky;
+    top: 0;
+
+}
+
+
+
+.dashboard_menu .menu_sub_title{
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+
+}
+.dashboard_menu li{
+    list-style: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+.dashboard_menu_link{
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: block;
+padding: 1rem;
+   
+}
+.dashboard_menu_link:hover{
+    color:var(--primary-color-2);
+}
+.dashboard_sub_menu{
+    display: none;
+}
+.dashboard_menu_link i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.fa-chevron-right{
+    float: right;
+}
+.show{
+    display: block;
+    padding-left: 2rem;
+    transition-property:display;
+
+    
+}
+.show .dashboard_menu_link{
+    padding: .5rem;
+    transition-property:background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    
+}
+.show .dashboard_menu_link:hover{
+    background-color: var(--accent-color);
+}

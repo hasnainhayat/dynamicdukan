@@ -1,0 +1,47 @@
+@import url('../../../default.css');
+
+.pageHeader{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "pageHeading buttonGroup";
+}
+.pageHeader h3{
+    font-size: 1.5rem;
+    grid-area: pageHeading;
+}
+.button-group{
+    grid-area: buttonGroup;
+    text-align: end;
+}
+.addNewButton{
+text-decoration: none;
+color: #fff;
+background-color: var(--primary-color);
+padding: .5rem .8rem;
+border-radius: .4rem;
+
+}
+.addNewButton:hover{
+    background-color: var(--primary-color-3);
+}
+.contentContainer{
+    width: 90%;
+    
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
+   
+}
+
+@media only screen and (max-width:1100px)
+{
+    .contentContainer{
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+      
+       
+    }
+}

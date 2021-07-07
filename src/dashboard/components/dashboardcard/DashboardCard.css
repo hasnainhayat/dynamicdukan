@@ -1,0 +1,47 @@
+@import url('../../../default.css');
+.dashboardCard{
+    background-color: #fff;
+    padding: 1rem;
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 12rem;
+    grid-template-areas: 
+    "heading chart"
+    
+    "cardDescription cardDescription"
+    ;
+    border-radius: 1rem;
+    box-shadow: 0 2px 30px #9299b810;
+    
+}
+.dashboardCard .cardHeading{
+    grid-area: heading;
+    margin-top: 2rem;
+}
+.dashboardCard h1{
+    font-size:2.375rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+   
+}
+.dashboardCard .cardTitle{
+    
+   font-size: 0.875rem;
+   
+    color: var(--muted-color);
+
+}
+.dashboardCard p{
+    grid-area: cardDescription;
+    margin-top: 1.5rem;
+    
+}
+.dashboardCard p span{
+color: var(--primary-color-2);
+font-weight: bold;
+margin-right: .5rem;
+}
+.chart{
+    grid-area: chart;
+}

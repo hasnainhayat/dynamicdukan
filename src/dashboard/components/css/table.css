@@ -1,0 +1,55 @@
+@import url('../../../default.css');
+.editIcon , .approveIcon{
+    color: var(--primary-color-2);
+    
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.editIcon:hover , .approveIcon:hover{
+background-color: var(--accent-color);
+}
+
+.deleteIcon , .cancelIcon{
+    color: var(--danger-color);
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.deleteIcon:hover , .cancelIcon:hover{
+    background-color: rgb(235, 38, 38,.2);
+}
+thead{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+th{
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px  solid #F1F2F6;
+    border-top:1px solid #F1F2F6;
+    border-right: 1px solid #F1F2F6;
+}
+table{
+    width: 100%;
+    border-collapse: separate !important;
+    
+ 
+    
+    
+}
+tr{
+    
+    border-bottom: 1px solid #F1F2F6;
+}
+td{
+    padding: 1rem;
+    border-right: 1px solid #F1F2F6;
+    border-bottom: 1px solid #F1F2F6;
+}
+table img{
+    height: 80px;
+  
+}

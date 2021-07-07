@@ -1,0 +1,5 @@
+.categoryTableContainer{
+    margin: 1rem !important;
+    overflow-y: scroll;
+    max-height: 70vh !important;
+    }

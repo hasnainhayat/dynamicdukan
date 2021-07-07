@@ -1,0 +1,73 @@
+.dashboardHome{
+    display: grid;
+    margin: 0;
+    padding: 0rem 2rem ;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto; 
+    grid-template-areas: 
+    "cards"
+    "tableCard"
+    ;
+    row-gap: 1rem;
+
+}
+
+.cards{
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    ;
+    row-gap: 1rem;
+    margin-top: 1rem;
+  
+
+}
+.card1{
+   
+    grid-area: card1;
+    
+    
+}
+.card2{
+ 
+    grid-area: card2;
+  
+}
+.card3{
+    grid-area: card3;
+    
+}
+.tableCard{
+    grid-area: "tableCard";
+    
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.tableCard h2{
+    margin: 1rem;
+}
+
+
+
+@media only screen and (min-width:768px) {
+
+  
+    .cards{
+        grid-area: cards;
+     
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "card1 card2 card3"
+        ;
+        column-gap: 1rem;
+      
+        max-height: 14rem;
+    }
+    
+}
