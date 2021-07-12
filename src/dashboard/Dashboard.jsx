@@ -32,23 +32,23 @@ function Dashboard() {
             </header>
             <section className="content">
             <switch>
-           <Route path="/" component={DashboardHome}/>
-           <Route path="/orders" component={Orders}/>
-           <Route path="/shops" component={Shops}/>
-           <Route path="/addshop" component={AddShop}/>
-           <Route path="/updateshop" component={UpdateShop}/>
-           <Route path="/customers" component={Customers}/>
-           <Route path="/addcustomer" component={AddCustomer}/>
-           <Route path="/updatecustomer" component={UpdateCustomer}/>
-           <Route path="/riders" component={Riders}/>
-           <Route path="/addrider" component={AddRider}/>
-           <Route path="/updaterider" component={UpdateRider}/>
-           <Route path="/categories" component={Categories}/>
-           <Route path="/updatecategory" component={UpdateCategory}/>
-           <Route path="/addcategory" component={AddCategory}/>
-           <Route path="/products" component={Products}/>
-           <Route path="/updateproduct" component={UpdateProduct}/>
-           <Route path="/addproduct" component={AddProduct}>
+           <Route exact path="/" component={DashboardHome}/>
+           <Route path="/dynamicdukan/orders" component={Orders}/>
+           <Route path="/dynamicdukan/shops" component={Shops}/>
+           <Route path="/dynamicdukan/addshop" component={AddShop}/>
+           <Route path="/dynamicdukan/updateshop" component={UpdateShop}/>
+           <Route path="/dynamicdukan/customers" component={Customers}/>
+           <Route path="/dynamicdukan/addcustomer" component={AddCustomer}/>
+           <Route path="/dynamicdukan/updatecustomer" component={UpdateCustomer}/>
+           <Route path="/dynamicdukan/riders" component={Riders}/>
+           <Route path="/dynamicdukan/addrider" component={AddRider}/>
+           <Route path="/dynamicdukan/updaterider" component={UpdateRider}/>
+           <Route path="/dynamicdukan/categories" component={Categories}/>
+           <Route path="/dynamicdukan/updatecategory" component={UpdateCategory}/>
+           <Route path="/dynamicdukan/addcategory" component={AddCategory}/>
+           <Route path="/dynamicdukan/products" component={Products}/>
+           <Route path="/dynamicdukan/updateproduct" component={UpdateProduct}/>
+           <Route path="/dynamicdukan/addproduct" component={AddProduct}>
            </Route>
            
            

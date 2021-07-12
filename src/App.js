@@ -8,6 +8,9 @@ import Home from './customer/pages/home/Home'
 import RegisterCategory from './customer/pages/RegisterCategory/RegisterCategory'
 import Shop from './customer/pages/shop/Shop'
 import DashBoard from './dashboard/Dashboard';
+import RegisterUser from './customer/components/auth/AuthForms/Register/RegisterUser';
+import RegisterRider from './customer/components/auth/AuthForms/Register/RegisterRider';
+import RegisterVendor from './customer/components/auth/AuthForms/Register/RegisterVendor';
 import {useSelector} from 'react-redux';
 function App() {
   const userRole=useSelector((state)=>state.login.role);
@@ -17,11 +20,15 @@ function App() {
     <Header />
     <Switch>
     
-      <Route exact path='/' component={Home} />
-      <Route path='/login' component={Login} />
-      <Route path='/register' component={RegisterCategory} />
-      <Route path='/shop' component={Shop} />
-      <Route path='/cart' component={Cart} />
+      <Route exact path='/dynamicdukan' component={Home} />
+      <Route path='/dynamicdukan/login' component={Login} />
+      <Route path='/dynamicdukan/register' component={RegisterCategory} />
+      <Route path='/dynamicdukan/shop' component={Shop} />
+      <Route path='/dynamicdukan/cart' component={Cart} />
+      <Route path='/dynamicdukan/registeruser' component={RegisterUser} />
+      <Route path='/dynamicdukan/registerrider' component={RegisterRider} />
+      <Route path='/dynamicdukan/registervendor' component={RegisterVendor} />
+      
       
       {/* <Route component={Error} /> */}
     </Switch>

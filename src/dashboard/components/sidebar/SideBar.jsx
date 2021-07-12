@@ -50,7 +50,7 @@ function SideBar() {
        
         <section className="dashboard_menu">
           <p className="menu_sub_title">Dashboard Menu</p>
-          <NavLink to="/dashboard" className="dashboard_menu_link">
+          <NavLink to="/dynamicdukan/dashboard" className="dashboard_menu_link">
             <i class="fas fa-tachometer-alt"></i> Dashboard
             
           </NavLink>
@@ -64,12 +64,12 @@ function SideBar() {
               </a>
               <ul className={subMenuClass1+" dashboard_sub_menu"}>
                 <li>
-                  <NavLink to="/shops" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/shops" className="dashboard_menu_link">
                     View Shops
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/addshop" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/addshop" className="dashboard_menu_link">
                     Add Shop
                   </NavLink>
                 </li>
@@ -84,12 +84,12 @@ function SideBar() {
               </a>
               <ul className={subMenuClass2+" dashboard_sub_menu"}>
                 <li>
-                  <NavLink to="/customers" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/customers" className="dashboard_menu_link">
                     View Customers
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="addcustomer" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukanaddcustomer" className="dashboard_menu_link">
                     Add Customer
                   </NavLink>
                 </li>
@@ -104,12 +104,12 @@ function SideBar() {
               </a>
               <ul className={subMenuClass3+" dashboard_sub_menu"}>
                 <li>
-                  <NavLink to="/products" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/products" className="dashboard_menu_link">
                     View Products
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/addproduct" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/addproduct" className="dashboard_menu_link">
                     Add Product
                   </NavLink>
                 </li>
@@ -124,19 +124,19 @@ function SideBar() {
               </a>
               <ul className={subMenuClass4+" dashboard_sub_menu"}>
                 <li>
-                  <NavLink to="/categories" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/categories" className="dashboard_menu_link">
                     View Catgories
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/addcategory" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/addcategory" className="dashboard_menu_link">
                     Add Category
                   </NavLink>
                 </li>
               </ul>
             </li>
             <li>
-              <NavLink to="orders" className="dashboard_menu_link">
+              <NavLink to="/dynamicdukanorders" className="dashboard_menu_link">
                 <i class="fas fa-shopping-basket"></i> Orders
                 
               </NavLink>
@@ -150,12 +150,12 @@ function SideBar() {
               </a>
               <ul className={subMenuClass5+" dashboard_sub_menu"}>
                 <li>
-                  <NavLink to="/riders" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/riders" className="dashboard_menu_link">
                     View Riders
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="addrider" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukanaddrider" className="dashboard_menu_link">
                     Add Rider
                   </NavLink>
                 </li>

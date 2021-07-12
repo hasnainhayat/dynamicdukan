@@ -7,9 +7,9 @@ function RegisterCategory() {
         <section className="container">
         <h1>Register As</h1>
         <section className="register-category-grid">
-            <AuthCategory icon={<i class="fas fa-user-tie"></i>} role="Customer"/>
-            <AuthCategory icon={<i class="fas fa-store"></i>} role="Vendor"/>
-            <AuthCategory icon={<i class="fas fa-motorcycle"></i>} role="Rider"/>
+            <AuthCategory icon={<i class="fas fa-user-tie"></i>} role="Customer" linked="/dynamicdukan/registeruser"/>
+            <AuthCategory icon={<i class="fas fa-store"></i>} role="Vendor" linked="/dynamicdukan/registervendor"/>
+            <AuthCategory icon={<i class="fas fa-motorcycle"></i>} role="Rider" linked="/dynamicdukan/registerrider"/>
             </section>
             </section>
         </div>

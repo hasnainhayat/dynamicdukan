@@ -19,7 +19,7 @@ cartTotal+=cartItem.totalPrice;
   return (
     <div className="header">
       <section className="header-top">
-        <h2 className="header-logo"><NavLink to="/" className="logo-link">Dynamic Dukan </NavLink> </h2>
+        <h2 className="header-logo"><NavLink to="/dynamicdukan" className="logo-link">Dynamic Dukan </NavLink> </h2>
         <section className={searchBar + " header-searchbar"}>
           <form className="header-search">
             <section className="header-form-group">
@@ -75,16 +75,16 @@ cartTotal+=cartItem.totalPrice;
               <i class="fas fa-user"></i>
             </button>
             <section className={accountMenu + " account-menu"}>
-              <NavLink className="header-menu-item" to="/login">
+              <NavLink className="header-menu-item" to="/dynamicdukan/login">
                 Login
               </NavLink>
-              <NavLink className="header-menu-item" to="/register">
+              <NavLink className="header-menu-item" to="/dynamicdukan/register">
                 Register
               </NavLink>
             </section>
           </section>
           <section className="header-cart-section">
-            <NavLink to="/cart" className="header-cart">
+            <NavLink to="/dynamicdukan/cart" className="header-cart">
               <i class="fas fa-shopping-cart"></i>
             </NavLink>
             <span className="cart-count-label">{cartCount}</span>
@@ -112,16 +112,16 @@ cartTotal+=cartItem.totalPrice;
               }}
             ></i>
             <section className={accountMenu + " account-menu"}>
-              <NavLink className="header-menu-item" to="/login">
+              <NavLink className="header-menu-item" to="/dynamicdukan/login">
                 Login
               </NavLink>
-              <NavLink className="header-menu-item" to="/register">
+              <NavLink className="header-menu-item" to="/dynamicdukan/register">
                 Register
               </NavLink>
             </section>
           </section>
           <section className="header-cart-section">
-            <NavLink to="/cart" className="header-cart">
+            <NavLink to="/dynamicdukan/cart" className="header-cart">
               <i class="fas fa-shopping-cart"></i>
             </NavLink>
             <span className="cart-count-label">{cartCount}</span>
@@ -137,7 +137,7 @@ cartTotal+=cartItem.totalPrice;
       </section>
       <section className={mobileMenu + " header-bottom"}>
         <section className="flash-sale-header">
-          <NavLink className="flash-sale-header-link" to="/shop">
+          <NavLink className="flash-sale-header-link" to="/dynamicdukan/shop">
              Shop Now
           </NavLink>
           <i
@@ -148,36 +148,36 @@ cartTotal+=cartItem.totalPrice;
           ></i>
         </section>
         <nav className="header-menu header-mobile-menu">
-          <NavLink className="header-menu-item" to="/shop">
+          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             Meat
           </NavLink>
-          <NavLink className="header-menu-item" to="/shop">
+          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             Vegetables
           </NavLink>
-          <NavLink className="header-menu-item" to="/shop">
+          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             Fruits
           </NavLink>
-          <NavLink className="header-menu-item" to="/shop">
+          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             Dairy
           </NavLink>
-          <NavLink className="header-menu-item" to="/shop">
+          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             Medical
           </NavLink>
-          <NavLink className="header-menu-item" to="/shop">
+          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             grocery
           </NavLink>
-          <NavLink className="header-menu-item" to="/shop">
+          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             On Sale
           </NavLink>
         </nav>
         <section className="header-bottom-right">
-          <NavLink to="/about" className="header-bottom-right-menu-item">
+          <NavLink to="/dynamicdukan/about" className="header-bottom-right-menu-item">
             About Us
           </NavLink>
-          <NavLink to="/contact" className="header-bottom-right-menu-item">
+          <NavLink to="/dynamicdukan/contact" className="header-bottom-right-menu-item">
             Contact Us
           </NavLink>
-          <NavLink to="/policy" className="header-bottom-right-menu-item">
+          <NavLink to="/dynamicdukan/policy" className="header-bottom-right-menu-item">
             Privacy Policy
           </NavLink>
         </section>
