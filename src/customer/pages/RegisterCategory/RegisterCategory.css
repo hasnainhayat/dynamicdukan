@@ -1,0 +1,18 @@
+.register-catgory{
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    padding:0% 10%;
+}
+.register-catgory .container{
+
+}
+.register-catgory h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.register-category-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

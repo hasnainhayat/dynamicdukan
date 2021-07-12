@@ -1,0 +1,130 @@
+.home-banner{
+    height: 50vh;
+    width: calc(100%-8rem);
+    background-image: url('../../../graphics/header-bg.png');
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "home-banner-left home-banner-right";
+    padding: 2rem 4rem;
+    grid-column-gap: 2%;
+}
+.home-banner-left{
+grid-area: home-banner-left;
+background-image: url('../../../graphics/homeBanner-left.png');
+background-repeat: no-repeat;
+background-size: 100% auto;
+border-radius: .5rem;
+
+
+}
+.home-banner-left-heading{
+font-size: 2.5rem;
+
+padding: 8rem 4rem 0rem 4rem;
+}
+.home-banner-left-heading span{
+color: #ffff;
+
+}
+.home-banner-left p{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    padding-left: 10rem;
+}
+.home-banner-left-btn{
+    text-decoration: none;
+    background-color: black;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 1.5rem;
+    margin-left: 10rem;
+}
+.home-banner-left-btn:hover{
+    background-color: #ffff;
+    color: black;
+}
+.home-banner-right{
+    grid-area: home-banner-right;
+    background-image: url('../../../graphics/homeBanner-right.png');
+    background-size: 100% 100%;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+
+    
+}
+.home-banner-right-heading{
+    font-size: 3rem;
+    padding: 2rem;
+    
+    margin-bottom: 1rem;
+}
+.home-banner-right-heading section{
+    color: var(--primary-color) !important;
+    margin: 1rem;
+}
+.home-banner-right-btn{
+     text-decoration: none;
+    background-color: black;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 1.5rem;
+    margin: 2rem;
+   ;
+}
+.home-banner-right-btn:hover{
+    background-color: var(--primary-color);
+}
+@media only screen and (max-width: 1250px){
+    .home-banner{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 50vh;
+        grid-row-gap: 2rem;
+        grid-template-areas: "home-banner-top"
+        "home-banner-bottom"
+        ;
+       
+    }
+    .home-banner-left{
+        grid-area: home-banner-top;
+        background-size: 100% 100% !important;
+    }
+    .home-banner-right{
+        grid-area: home-banner-bottom;
+    }
+    .home-banner-left-heading{
+        padding: 1rem 2rem 0rem 2rem;
+    }
+    .home-banner-left p{
+        padding-left: 2rem;
+    }
+    .home-banner-left-btn{
+        margin-left: 2rem;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .home-banner-left-heading{
+        font-size: 2rem;
+    }
+    .home-banner-left-btn{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .home-banner-left p{
+        margin-bottom: 2rem;
+    }
+    .home-banner-right-heading{
+        font-size: 2rem;
+    }
+   
+    .home-banner-right-btn{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

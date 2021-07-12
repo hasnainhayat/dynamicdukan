@@ -1,0 +1,39 @@
+@import url('../../../default.css');
+.home-heading{
+    padding: 1.5rem 4rem;
+    
+}
+.home-heading{
+    border-bottom: 1px solid var(--accent-color) !important;
+    
+    color: var(--primary-color);
+   
+}
+.home-heading i{
+    color: #e25822;
+    font-size: 2rem;
+}
+.home-trending-products{
+    display: grid;
+    padding: 1.5rem 4rem;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+  
+}
+@media only screen and (max-width: 1250px){
+    .home-trending-products{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .home-trending-products{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 650px){
+    .home-trending-products{
+        grid-template-columns: 100%;
+    }
+}

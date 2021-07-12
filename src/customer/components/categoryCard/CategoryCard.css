@@ -1,0 +1,13 @@
+@import url('../../../default.css');
+.category-card{
+    padding: 2rem;
+    max-width: 100px;
+    background-color: #e2f9ee;
+    margin: 0 auto;
+}
+.category-card img{
+    width: cover;
+}
+.category-card h2{
+    text-align: center;
+}
