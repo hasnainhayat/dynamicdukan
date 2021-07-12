@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dynamicdukan/static/css/main.3cebc80e.chunk.css",
+    "main.js": "/dynamicdukan/static/js/main.c5b0ea0b.chunk.js",
+    "main.js.map": "/dynamicdukan/static/js/main.c5b0ea0b.chunk.js.map",
+    "runtime-main.js": "/dynamicdukan/static/js/runtime-main.a7e0c2a3.js",
+    "runtime-main.js.map": "/dynamicdukan/static/js/runtime-main.a7e0c2a3.js.map",
+    "static/js/2.580b70ae.chunk.js": "/dynamicdukan/static/js/2.580b70ae.chunk.js",
+    "static/js/2.580b70ae.chunk.js.map": "/dynamicdukan/static/js/2.580b70ae.chunk.js.map",
+    "static/js/3.3c06da66.chunk.js": "/dynamicdukan/static/js/3.3c06da66.chunk.js",
+    "static/js/3.3c06da66.chunk.js.map": "/dynamicdukan/static/js/3.3c06da66.chunk.js.map",
+    "index.html": "/dynamicdukan/index.html",
+    "static/css/main.3cebc80e.chunk.css.map": "/dynamicdukan/static/css/main.3cebc80e.chunk.css.map",
+    "static/js/2.580b70ae.chunk.js.LICENSE.txt": "/dynamicdukan/static/js/2.580b70ae.chunk.js.LICENSE.txt",
+    "static/media/1.540bc23e.png": "/dynamicdukan/static/media/1.540bc23e.png",
+    "static/media/avatar.e5bf0bb6.jpg": "/dynamicdukan/static/media/avatar.e5bf0bb6.jpg",
+    "static/media/HomeBanner.css": "/dynamicdukan/static/media/homeBanner-right.20986e89.png",
+    "static/media/Shop.css": "/dynamicdukan/static/media/shop.a879685c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7e0c2a3.js",
+    "static/js/2.580b70ae.chunk.js",
+    "static/css/main.3cebc80e.chunk.css",
+    "static/js/main.c5b0ea0b.chunk.js"
+  ]
+}
