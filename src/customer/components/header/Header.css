@@ -34,6 +34,10 @@
     padding: .5rem;
 
 }
+.header-top .header-logo .logo-link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
 .header-search-bar{
     grid-area: header-search;
 }

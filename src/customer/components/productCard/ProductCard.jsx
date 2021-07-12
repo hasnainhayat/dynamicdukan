@@ -1,11 +1,17 @@
 import React from 'react'
 import productimage from '../../../graphics/product/1.png'
-import './ProductCard.css'
 
-function ProductCard() {
+import './ProductCard.css'
+import { connect } from "react-redux";
+import {
+
+  addToCart,
+} from '../../../redux/shopping/soppingActions';
+
+const ProductCard = ({ product, addToCart }) => {
     return (
         <div className="product-card">
-            <img src={productimage} alt="product name" />
+            <img src={product.image} alt="product name" />
             <section className="productCardHeader">
             <section className="shopName">
             <i class="fas fa-store"></i>  Ali Kiryana
@@ -21,14 +27,19 @@ function ProductCard() {
             </section>
            
             <section className="productName">
-            ABCD PEODUCT
+            {product.title}
             </section>
             <section className="productCardFooter">
-            <section className="productPrice">RS. 1231</section>
-            <section className="addToCart"><i class="fas fa-shopping-basket"></i></section>
+            <section className="productPrice">RS. {product.price}</section>
+            <section className="addToCart" onClick={() => {addToCart(product.id
+        );}}><i class="fas fa-shopping-basket"></i></section>
             </section>
         </div>
     )
 }
-
-export default ProductCard
+const mapDispatchToProps = (dispatch) => {
+    return {
+      addToCart: (id) => dispatch(addToCart(id)),
+    };
+  };
+export default connect(null, mapDispatchToProps) (ProductCard);

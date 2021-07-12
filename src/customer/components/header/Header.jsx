@@ -2,15 +2,24 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import categories from "../../../logic/categories";
+import {useSelector} from 'react-redux';
 function Header() {
   const [mobileMenu, setMobileMenu] = useState("");
   const [accountMenu, setAccountMenu] = useState("");
   const [searchBar, setSearchBar] = useState("");
+  const cart=useSelector((state)=>state.shop.cart);
+  
+var cartCount=0;
+var cartTotal=0;
+cart.forEach((cartItem)=>{
+cartCount+=cartItem.qty;
+cartTotal+=cartItem.totalPrice;
+})
 
   return (
     <div className="header">
       <section className="header-top">
-        <h2 className="header-logo"> Dynamic Dukan </h2>
+        <h2 className="header-logo"><NavLink to="/" className="logo-link">Dynamic Dukan </NavLink> </h2>
         <section className={searchBar + " header-searchbar"}>
           <form className="header-search">
             <section className="header-form-group">
@@ -66,20 +75,20 @@ function Header() {
               <i class="fas fa-user"></i>
             </button>
             <section className={accountMenu + " account-menu"}>
-              <NavLink className="header-menu-item" to="">
+              <NavLink className="header-menu-item" to="/login">
                 Login
               </NavLink>
-              <NavLink className="header-menu-item" to="">
+              <NavLink className="header-menu-item" to="/register">
                 Register
               </NavLink>
             </section>
           </section>
           <section className="header-cart-section">
-            <NavLink to="" className="header-cart">
+            <NavLink to="/cart" className="header-cart">
               <i class="fas fa-shopping-cart"></i>
             </NavLink>
-            <span className="cart-count-label">12</span>
-            <span className="cart-total">Rs. 12345</span>
+            <span className="cart-count-label">{cartCount}</span>
+            <span className="cart-total">RS. {cartTotal}</span>
           </section>
         </section>
         <section className="header-menu-icons">
@@ -103,19 +112,19 @@ function Header() {
               }}
             ></i>
             <section className={accountMenu + " account-menu"}>
-              <NavLink className="header-menu-item" to="">
+              <NavLink className="header-menu-item" to="/login">
                 Login
               </NavLink>
-              <NavLink className="header-menu-item" to="">
+              <NavLink className="header-menu-item" to="/register">
                 Register
               </NavLink>
             </section>
           </section>
           <section className="header-cart-section">
-            <NavLink to="" className="header-cart">
+            <NavLink to="/cart" className="header-cart">
               <i class="fas fa-shopping-cart"></i>
             </NavLink>
-            <span className="cart-count-label">12</span>
+            <span className="cart-count-label">{cartCount}</span>
           </section>
 
           <i
@@ -128,7 +137,7 @@ function Header() {
       </section>
       <section className={mobileMenu + " header-bottom"}>
         <section className="flash-sale-header">
-          <NavLink className="flash-sale-header-link" to="">
+          <NavLink className="flash-sale-header-link" to="/shop">
              Shop Now
           </NavLink>
           <i
@@ -139,36 +148,36 @@ function Header() {
           ></i>
         </section>
         <nav className="header-menu header-mobile-menu">
-          <NavLink className="header-menu-item" to="">
+          <NavLink className="header-menu-item" to="/shop">
             Meat
           </NavLink>
-          <NavLink className="header-menu-item" to="">
+          <NavLink className="header-menu-item" to="/shop">
             Vegetables
           </NavLink>
-          <NavLink className="header-menu-item" to="">
+          <NavLink className="header-menu-item" to="/shop">
             Fruits
           </NavLink>
-          <NavLink className="header-menu-item" to="">
+          <NavLink className="header-menu-item" to="/shop">
             Dairy
           </NavLink>
-          <NavLink className="header-menu-item" to="">
+          <NavLink className="header-menu-item" to="/shop">
             Medical
           </NavLink>
-          <NavLink className="header-menu-item" to="">
+          <NavLink className="header-menu-item" to="/shop">
             grocery
           </NavLink>
-          <NavLink className="header-menu-item" to="">
+          <NavLink className="header-menu-item" to="/shop">
             On Sale
           </NavLink>
         </nav>
         <section className="header-bottom-right">
-          <NavLink to="" className="header-bottom-right-menu-item">
+          <NavLink to="/about" className="header-bottom-right-menu-item">
             About Us
           </NavLink>
-          <NavLink to="" className="header-bottom-right-menu-item">
+          <NavLink to="/contact" className="header-bottom-right-menu-item">
             Contact Us
           </NavLink>
-          <NavLink to="" className="header-bottom-right-menu-item">
+          <NavLink to="/policy" className="header-bottom-right-menu-item">
             Privacy Policy
           </NavLink>
         </section>

@@ -9,30 +9,23 @@ import CategoryScroller from '../../components/CategoryScroller/CategoryScroller
 import ShopCard from '../../components/shopCard/ShopCard';
 import ShopScroller from '../../components/ShopScroller/ShopScroller';
 import Footer from '../../components/footer/Footer';
+import {useSelector} from 'react-redux';
 
 function Home() {
+    const products=useSelector((state)=>state.shop.products);
+    console.log(products)
     return (
         <div className="home-page">
-             <Header />
+            
       <HomeBanner />
       <CategoryScroller />
       <ShopScroller />
       <h2 className="home-heading"><i class="fas fa-fire-alt"></i> Trending Near You. </h2>
       <section className="home-trending-products">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      {products.map(product=>{
+    return   <ProductCard product={product}/>})}
       </section>
-    <Footer />
+ 
         </div>
     )
 }

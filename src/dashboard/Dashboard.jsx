@@ -32,7 +32,7 @@ function Dashboard() {
             </header>
             <section className="content">
             <switch>
-           <Route path="/dashboard" component={DashboardHome}/>
+           <Route path="/" component={DashboardHome}/>
            <Route path="/orders" component={Orders}/>
            <Route path="/shops" component={Shops}/>
            <Route path="/addshop" component={AddShop}/>
