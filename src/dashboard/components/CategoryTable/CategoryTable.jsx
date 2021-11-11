@@ -18,7 +18,7 @@ function CategoryTable() {
                return <tr>
             <td><img src={category.image} /></td>
             <td>{category.title}</td>
-            <td><NavLink to="/updatecategory"><i class="far fa-edit editIcon" title="Edit Category"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete Category"></i></td>
+            <td><NavLink to="/dynamicdukan/updatecategory"><i class="far fa-edit editIcon" title="Edit Category"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete Category"></i></td>
             </tr>
             })}
            

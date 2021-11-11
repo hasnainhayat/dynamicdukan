@@ -11,3 +11,7 @@
 .category-card h2{
     text-align: center;
 }
+.category-card-link{
+    color: black;
+    text-decoration: none;
+}

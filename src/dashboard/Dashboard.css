@@ -12,6 +12,18 @@
     ;
     min-height: 100vh;
 }
+.logoutbtn{
+    text-align: right;
+    padding: 1.2rem;
+}
+.logoutbtn span{
+    background-color: var(--primary-color);
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.logoutbtn span:hover{
+    
+}
 aside{
     grid-area: sidebar;
     background-color: #fff;
@@ -20,9 +32,12 @@ aside{
    
     
 }
-header{
+.dashboard-header{
     grid-area: header;
     background-color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    
     box-shadow: 0 2px 30px #9299b810;
 }
 

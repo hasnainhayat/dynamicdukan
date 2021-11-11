@@ -36,24 +36,24 @@ export default function Footer() {
             <h3 className="footer-headings">Useful Links</h3>
             <ul className="footer-menu">
                 <li>
-                <NavLink to="" className="footer-menu-link">About Us</NavLink>
+                <NavLink to="/dynamicdukan/shop" className="footer-menu-link">Shop Now</NavLink>
                 </li>
                 <li>
-                <NavLink to="" className="footer-menu-link">contact Us</NavLink>
+                <NavLink to="/dynamicdukan/contact" className="footer-menu-link">contact Us</NavLink>
+                </li>
+                {/* <li>
+                <NavLink to="/dynamicdukan/helpcenter" className="footer-menu-link">Help Center</NavLink>
                 </li>
                 <li>
-                <NavLink to="" className="footer-menu-link">Help Center</NavLink>
-                </li>
-                <li>
-                <NavLink to="" className="footer-menu-link">Privacy Policy</NavLink>
-                </li>
+                <NavLink to="/dynamicdukan/privacypolicy" className="footer-menu-link">Privacy Policy</NavLink>
+                </li> */}
             </ul>
           </section>
           <section className="footer-help-menu">
             <h3 className="footer-headings">Help Center</h3>
             <ul className="footer-menu">
-                <li>
-                <NavLink to="" className="footer-menu-link">FAQ</NavLink>
+            <li>
+                <NavLink to="/dynamicdukan/contact" className="footer-menu-link">contact Us</NavLink>
                 </li>
                
             </ul>
@@ -62,14 +62,14 @@ export default function Footer() {
             <h3 className="footer-headings">Business With Us</h3>
             <ul className="footer-menu">
                 <li>
-                <NavLink to="" className="footer-menu-link">Sell With Us</NavLink>
+                <NavLink to="/dynamicdukan/registervendor" className="footer-menu-link">Sell With Us</NavLink>
                 </li>
                 <li>
-                <NavLink to="" className="footer-menu-link">Become Rider</NavLink>
+                <NavLink to="/dynamicdukan/registerrider" className="footer-menu-link">Become Rider</NavLink>
                 </li>
-                <li>
+                {/* <li>
                 <NavLink to="" className="footer-menu-link">Adevertise with us</NavLink>
-                </li>
+                </li> */}
             </ul>
           </section>
         </section>

@@ -11,7 +11,7 @@
 .header{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 12vh 8vh;
+    grid-template-rows: 6rem 4rem;
     grid-template-areas: 
     "headerTop" 
     "headerBottom";
@@ -234,7 +234,7 @@
 @media only screen and (max-width: 1250px){
   
     .header{
-        grid-template-rows: 12vh;
+        grid-template-rows: 10rem;
         grid-template-columns: 100%;
         grid-template-areas: "header";
     }
@@ -274,7 +274,7 @@
     .header-bottom{
         display: none;
         width: 40%;
-       height: 100vh;
+       height: auto;
         position: absolute;
         top: 0;
         right: 0;
@@ -411,6 +411,7 @@
     display: block;
     grid-area: search-category-mobile;
 }
+
 .show-searchBar .header-search-input{
     display: block;
     grid-area: search-input-mobile;

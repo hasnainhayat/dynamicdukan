@@ -24,7 +24,7 @@ function CustomerTable() {
             <td>{customer.email}</td>
             <td>{customer.contact}</td>
             <td>{customer.address}</td>
-            <td><NavLink to="/updatecustomer"><i class="far fa-edit editIcon" title="Edit customer"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete customer"></i></td>
+            <td><NavLink to="/dynamicdukan/updatecustomer"><i class="far fa-edit editIcon" title="Edit customer"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete customer"></i></td>
             </tr>
             })}
            

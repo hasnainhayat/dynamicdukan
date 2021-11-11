@@ -91,3 +91,15 @@ display: none;
 .remove-img-show{
     display: inline;
 }
+@media only screen and (max-width: 800px){
+    .auth-form-div h1{
+      
+        width: 80%;
+       
+        }
+        .auth-form-container{
+      
+            width: 80%;
+         
+        }
+}

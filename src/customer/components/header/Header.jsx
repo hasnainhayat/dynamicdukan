@@ -8,7 +8,7 @@ function Header() {
   const [accountMenu, setAccountMenu] = useState("");
   const [searchBar, setSearchBar] = useState("");
   const cart=useSelector((state)=>state.shop.cart);
-  
+  const userRole=useSelector((state)=>state.login.role);
 var cartCount=0;
 var cartTotal=0;
 cart.forEach((cartItem)=>{
@@ -74,7 +74,17 @@ cartTotal+=cartItem.totalPrice;
             >
               <i class="fas fa-user"></i>
             </button>
-            <section className={accountMenu + " account-menu"}>
+            {userRole==="customer"?<section className={accountMenu + " account-menu"}>
+              
+              <NavLink className="header-menu-item" to="/dynamicdukan/myaccount">
+                My Account
+              </NavLink>
+              <NavLink className="header-menu-item" to="/dynamicdukan/login">
+                Logout
+              </NavLink>
+            </section>
+          :<section className={accountMenu + " account-menu"}>
+              
               <NavLink className="header-menu-item" to="/dynamicdukan/login">
                 Login
               </NavLink>
@@ -82,7 +92,9 @@ cartTotal+=cartItem.totalPrice;
                 Register
               </NavLink>
             </section>
-          </section>
+
+            }
+            </section>
           <section className="header-cart-section">
             <NavLink to="/dynamicdukan/cart" className="header-cart">
               <i class="fas fa-shopping-cart"></i>
@@ -160,9 +172,7 @@ cartTotal+=cartItem.totalPrice;
           <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             Dairy
           </NavLink>
-          <NavLink className="header-menu-item" to="/dynamicdukan/shop">
-            Medical
-          </NavLink>
+          
           <NavLink className="header-menu-item" to="/dynamicdukan/shop">
             grocery
           </NavLink>

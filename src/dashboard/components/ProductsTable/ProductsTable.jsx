@@ -27,7 +27,7 @@ function ProductsTable() {
             <td>fruit</td>
             <td>{product.price}</td>
             <td>{product.stock}</td>
-            <td><NavLink to="/updateproduct"><i class="far fa-edit editIcon" title="Edit Product"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete Product"></i></td>
+            <td><NavLink to="/dynamicdukan/updateproduct"><i class="far fa-edit editIcon" title="Edit Product"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete Product"></i></td>
             </tr>
             })}
            

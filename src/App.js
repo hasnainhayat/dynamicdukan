@@ -12,11 +12,12 @@ import RegisterUser from './customer/components/auth/AuthForms/Register/Register
 import RegisterRider from './customer/components/auth/AuthForms/Register/RegisterRider';
 import RegisterVendor from './customer/components/auth/AuthForms/Register/RegisterVendor';
 import {useSelector} from 'react-redux';
+import Contact from './customer/pages/contact/Contact'
 function App() {
   const userRole=useSelector((state)=>state.login.role);
   return (
     <div className="App">
-    {userRole==="admin" ?  <DashBoard /> :  <div>
+    {userRole==="admin" || userRole==="vendor"?  <DashBoard /> :  <div>
     <Header />
     <Switch>
     
@@ -28,6 +29,7 @@ function App() {
       <Route path='/dynamicdukan/registeruser' component={RegisterUser} />
       <Route path='/dynamicdukan/registerrider' component={RegisterRider} />
       <Route path='/dynamicdukan/registervendor' component={RegisterVendor} />
+      <Route path='/dynamicdukan/contact' component={Contact} />
       
       
       {/* <Route component={Error} /> */}

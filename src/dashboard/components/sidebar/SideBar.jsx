@@ -2,12 +2,14 @@ import React from 'react'
 import './SideBar.css'
 import {useState} from 'react'
 import { NavLink } from 'react-router-dom'
+import {useSelector} from 'react-redux';
 function SideBar() {
   const [subMenuClass1, setSubMenuClass1] = useState("");
   const [subMenuClass2, setSubMenuClass2] = useState("");
   const [subMenuClass3, setSubMenuClass3] = useState("");
   const [subMenuClass4, setSubMenuClass4] = useState("");
   const [subMenuClass5, setSubMenuClass5] = useState("");
+  const userRole=useSelector((state)=>state.login.role);
   function showSubMenu(menu){
     if (menu === "shops") {
       if (subMenuClass1 !== "show") {
@@ -50,11 +52,12 @@ function SideBar() {
        
         <section className="dashboard_menu">
           <p className="menu_sub_title">Dashboard Menu</p>
-          <NavLink to="/dynamicdukan/dashboard" className="dashboard_menu_link">
+          <NavLink to="/dynamicdukan" className="dashboard_menu_link">
             <i class="fas fa-tachometer-alt"></i> Dashboard
             
           </NavLink>
           <ul>
+          {userRole==="admin"?<section>
             <li>
               <a href="#" className="dashboard_menu_link" onClick={()=>{
                 showSubMenu("shops");
@@ -89,28 +92,8 @@ function SideBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dynamicdukanaddcustomer" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/addcustomer" className="dashboard_menu_link">
                     Add Customer
-                  </NavLink>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" className="dashboard_menu_link" onClick={()=>{
-                showSubMenu("products");
-              }}>
-                <i class="fab fa-product-hunt"></i> Products
-                <i class="fas fa-chevron-right"></i>
-              </a>
-              <ul className={subMenuClass3+" dashboard_sub_menu"}>
-                <li>
-                  <NavLink to="/dynamicdukan/products" className="dashboard_menu_link">
-                    View Products
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dynamicdukan/addproduct" className="dashboard_menu_link">
-                    Add Product
                   </NavLink>
                 </li>
               </ul>
@@ -135,12 +118,7 @@ function SideBar() {
                 </li>
               </ul>
             </li>
-            <li>
-              <NavLink to="/dynamicdukanorders" className="dashboard_menu_link">
-                <i class="fas fa-shopping-basket"></i> Orders
-                
-              </NavLink>
-            </li>
+            
             <li>
               <a href="#" className="dashboard_menu_link" onClick={()=>{
                 showSubMenu("riders");
@@ -155,12 +133,40 @@ function SideBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dynamicdukanaddrider" className="dashboard_menu_link">
+                  <NavLink to="/dynamicdukan/addrider" className="dashboard_menu_link">
                     Add Rider
                   </NavLink>
                 </li>
               </ul>
             </li>
+            </section>:""}
+            <li>
+              <a href="#" className="dashboard_menu_link" onClick={()=>{
+                showSubMenu("products");
+              }}>
+                <i class="fab fa-product-hunt"></i> Products
+                <i class="fas fa-chevron-right"></i>
+              </a>
+              <ul className={subMenuClass3+" dashboard_sub_menu"}>
+                <li>
+                  <NavLink to="/dynamicdukan/products" className="dashboard_menu_link">
+                    View Products
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/dynamicdukan/addproduct" className="dashboard_menu_link">
+                    Add Product
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <NavLink to="/dynamicdukan/orders" className="dashboard_menu_link">
+                <i class="fas fa-shopping-basket"></i> Orders
+                
+              </NavLink>
+            </li>
+         
           </ul>
         </section>
       </div>

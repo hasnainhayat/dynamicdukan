@@ -7,7 +7,7 @@ function Orders() {
              <div className="pageHeader">
             <h3>Orders</h3>
             <section className="button-group">
-            <a href="#" className="addNewButton">+ Add New</a>
+            
             </section>
         </div>
         <div className="contentContainer">

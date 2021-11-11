@@ -11,6 +11,7 @@ function OrdersTable() {
             <tr>
                 <th>Order Items</th>
                 <th>Customer Name</th>
+                <th>Rdier</th>
                 <th>Total</th>
                 <th>Status</th>
                 <th>Actions</th>
@@ -24,6 +25,7 @@ function OrdersTable() {
                 return item.title + ", "
             }))}</td>
             <td>{order.customerName}</td>
+            <td>{order.riderName}</td>
             <td>{order.orderItems.forEach((item=>{
                 total+=item.price;
             }))}
@@ -32,6 +34,7 @@ function OrdersTable() {
             </td>
             <td>{order.status}</td>
             <td> <i class="fas fa-trash-alt deleteIcon" title="Delete order"></i></td>
+
             </tr>
             })}
            

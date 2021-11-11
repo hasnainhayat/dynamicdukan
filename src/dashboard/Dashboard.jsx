@@ -19,20 +19,31 @@ import Riders from './pages/riders/Riders'
 import AddRider from './pages/riders/AddRider'
 import UpdateRider from './pages/riders/UpdateRider'
 import { Route } from 'react-router'
-function Dashboard() {
+import { connect } from "react-redux";
+import {
+
+    login,
+  } from '../redux/login/loginActions';
+const Dashboard=({login})=> {
     return (
         <div className="dashboard">
             <aside>
                 <SideBar />
             </aside>
-            <header>
+            <header className="dashboard-header">
             <section className="sidebar_logo">
           <h1>DynamicDukan</h1>
+        
         </section>
+        <section className="logoutbtn">
+        <span onClick={()=>{
+            login(0);
+        }}> Logout</span>
+          </section>
             </header>
             <section className="content">
             <switch>
-           <Route exact path="/" component={DashboardHome}/>
+           <Route exact path="/dynamicdukan" component={DashboardHome}/>
            <Route path="/dynamicdukan/orders" component={Orders}/>
            <Route path="/dynamicdukan/shops" component={Shops}/>
            <Route path="/dynamicdukan/addshop" component={AddShop}/>
@@ -61,4 +72,9 @@ function Dashboard() {
     )
 }
 
-export default Dashboard
+const mapDispatchToProps = (dispatch) => {
+    return {
+      login: (role) => dispatch(login(role)),
+    };
+  };
+export default  connect(null, mapDispatchToProps) (Dashboard)

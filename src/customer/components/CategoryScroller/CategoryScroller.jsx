@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import categories from "../../../logic/categories";
 import CategoryCard from "../categoryCard/CategoryCard";
 import  "./CategoryScroller.css";
 function SampleNextArrow(props) {
@@ -94,18 +95,15 @@ export default function CategoryScroller() {
      <h2 className="home-heading"><i class="fas fa-fire-alt"></i> Popular Categories. </h2>
 
      <Slider {...settings}>
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
-         <CategoryCard />
+        {categories.map((category)=>{
+          return <CategoryCard title={category.title} image={category.image} linked="/dynamicdukan/shop"/>
+        })}
+        {categories.map((category)=>{
+          return <CategoryCard title={category.title} image={category.image} linked="/dynamicdukan/shop"/>
+        })}
+        {categories.map((category)=>{
+          return <CategoryCard title={category.title} image={category.image} linked="/dynamicdukan/shop"/>
+        })}
           </Slider>
     </div>
   );

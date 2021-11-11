@@ -28,7 +28,7 @@ function RidersTable() {
             <td>{rider.CNIC}</td>
             <td>{rider.BikeNumber}</td>
             <td>{rider.address}</td>
-            <td><NavLink to="/updaterider"><i class="far fa-edit editIcon" title="Edit rider"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete rider"></i></td>
+            <td><NavLink to="/dynamicdukan/updaterider"><i class="far fa-edit editIcon" title="Edit rider"></i></NavLink> <i class="fas fa-trash-alt deleteIcon" title="Delete rider"></i></td>
             </tr>
             })}
            

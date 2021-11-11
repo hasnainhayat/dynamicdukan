@@ -43,7 +43,7 @@ function AddRider() {
                
                 <div className="form-group btn-group">
                 <button className="cancelFormBtn" type="reset">Cancel</button>
-                    <button type="submit" className="submitBtn">Create Customer</button>
+                    <button type="submit" className="submitBtn">Create Rider</button>
                 </div>
                 </div>
                 <div className="form-right">
